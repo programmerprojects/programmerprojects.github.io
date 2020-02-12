@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Blog</title>
+	<link rel = "stylesheet" type = "text/css" href = "final_style.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Cute+Font&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="MySite.css">
+	<link rel="shortcut icon" href="B.png" type="image/x-icon">
+</head>
+<body>
+	<style type="text/css">
+		body {
+			background-color: #f8f8ff;
+	}
+		.slt{
+			position: absolute;
+			/*margin-left:-8px;
+			margin-top:-8px; */
+			left: 0%;
+			top: 5%;
+			float: left;
+			text-align: left;
+			font-size: 1.2em;
+			width: 100%;
+			/*height: 50%;*/
+			background-color: #9db1cc;
+			border-radius: 10px;
+			list-style-type: none;
+			padding-left: 0px;
+			text-decoration: none;
+			/*text-transform: uppercase;*/
+			font-style: normal;
+			font-weight: 100;
+			font-variant: normal;
+			font-family: Geneva, Arial, Helvetica, sans-serif;
+			font-stretch: ultra-condensed;
+			/*<form>		Скрипт поиска по сайту, можно добавить в html;
+  		<input type="search">
+  		<input type="submit" value="Найти">
+	</form>*/
+		}
+		.slt select{
+			height: 20px;
+			margin: 1% auto; 
+		}
+		.slt a{
+			padding-left:2%;
+		}
+		.slt #c1{
+			float: right;
+			padding: 1%;
+			text-decoration: none;
+			color: rgb(255,255,255);
+		}
+		.logo{
+			top: 0%;
+			position: fixed; /* Фиксированное положение */
+    		left: 0; /* Левый нижний угол * /* Цвет текста */
+    		width: 100%;
+			height: 7%;
+			/*background-color: #c6a664;*/
+			background-color: #a2add0;
+			border-radius: 20px;
+			text-align: center;
+			font-style: normal;
+			font-weight: 100;
+			font-variant: normal;
+			font-family: 'Comfortaa', cursive;
+			font-stretch: ultra-condensed;
+			font-size: 2em;
+		}
+		#hs{
+				/*
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<div class="hs">		
+	<h1>Как создать свой первый сайт?</h1>
+	<h2></h2>
+</div>*/
+			margin-left: 15%;	
+			width: 65%;
+			/*margin-top: 13%;*/
+			font-size: 1.3em;
+			text-align: center;
+			font-style: normal;
+			font-weight: 100;
+			font-variant: normal;
+			font-family: Geneva, Arial, Helvetica, sans-serif;
+			font-stretch: ultra-condensed;
+			display: none;
+		}
+		.net{
+			float: left;
+			width: 10%;
+			padding-top: 10%;
+			position: fixed;
+		}
+		.net img{
+			width: 65%;
+		}
+		.hts{
+			padding-top: 12%;
+			padding-left: 15%;
+			width: 65%;
+		}
+		.hts a{
+			text-align: center;
+			font-size: 2em;
+			font-style: normal;
+			font-weight: 100;
+			font-variant: normal;
+			font-family: Geneva, Arial, Helvetica, sans-serif;
+			font-stretch: ultra-condensed;
+			text-decoration: none;
+		}
+		.b2{
+
+		}
+		.block{
+	width: 30%;
+	/*height: 350px;*/
+	margin: 1%;
+
+	border-radius: 5%;
+	border: 1px solid black;
+
+	background-color: lightblue;
+
+	float: left;
+
+	position: relative;
+	overflow: hidden;
+}
+
+.block:hover .descr {
+	transform: translateY(-100%);
+	transition-delay: .05s;
+}
+.block:hover img {
+	transform: scale(1.5);
+	transition-duration: 1s;
+}
+.block .descr{
+	width: 5%;
+	height: 230px;
+	padding-top: 20px;
+	padding-left: 20px;
+
+	font-family: 'Comfortaa', cursive;
+	/*background:linear-gradient(0,#000, #fff);
+	background: rgba(255, 255, 255 ,0.5);*/
+	opacity: 0.8;
+
+	position: absolute;
+	bottom: -100%;
+
+	transition-duration: 1s;
+	
+}
+
+
+
+.block img {
+	width: 100%;
+	height: 100%;
+
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+		/*.ts:target{
+			display:block !important;
+		}
+		.ts p{
+			font-size: 1.2em;
+			font-style: normal;
+			font-weight: 100;
+			font-variant: normal;
+			font-family: Geneva, Arial, Helvetica, sans-serif;
+			font-stretch: ultra-condensed;
+			text-decoration: none;
+			text-align: center;
+			text-decoration: none;
+		}*/
+		.topbutton {
+			width:100px;
+			border:2px solid #ccc;
+			background:#f7f7f7;
+			text-align:center;
+			padding:10px;
+			position:fixed;
+			bottom:50px;
+			right:50px;
+			cursor:pointer;
+			color:#333;
+			font-family:verdana;
+			font-size:12px;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-khtml-border-radius: 5px;
+			}
+			.container{
+	width: 900px;
+	margin: 0 auto;
+	padding-left: 50px;
+}
+
+#header{
+	text-align: center;
+
+	font-family: 'Press Start 2P', cursive;
+	text-shadow: 10px 10px 20px;
+}
+h3{
+	text-align: center;
+	font-size: 2.4em;
+	font-family: 'Comfortaa', cursive;
+	text-decoration: none;
+}
+.hts{
+	padding-top: 5%;
+	width: 75%;
+}
+.hts h1{
+	text-align: center;
+	font-size: 4.2em;
+	font-family: 'Comfortaa', cursive;
+	text-decoration: none;
+}
+.hts p{
+	font-family:verdana;
+	text-decoration: none;
+	font-size: 1.3em;
+}
+#u{
+	text-decoration: none;
+	text-align: center;
+
+}
+		/*.myDiv:target{
+			display:block !important;
+		}
+		/*	<div class="b1">
+		<input type="button" value="Как создать свой первый сайт?" onmousedown="viewDiv()" >
+	</div>
+	<div id="hs">
+		<h1>Как создать свой первый сайт?</h1>
+	</div>
+</style>
+
+<script type="text/javascript">
+	/*
+	/*function viewDiv(){
+	  document.getElementById("hs").style.display = "block";
+	};
+
+
+	<div class="b1">
+	<a href="#First" >First Div</a>
+
+<a href="#Second">Second Div</a>
+
+<a href="#Third">Third Div</a>
+
+<a href="#Fourth">Fourth Div</a>
+
+<div class="myDiv" id="First" style="display:none">First</div>
+
+<div class="myDiv" id="Second" style="display:none">Second</div>
+
+<div class="myDiv" id="Third" style="display:none">Third</div>
+
+<div class="myDiv" id="Fourth" style="display:none">Fourth</div>
+<div>
+
+<style>
+
+.myDiv:target{
+
+display:block !important;
+
+}
+
+</style>
+</script>
+
+	
+		<header>
+			<div class="logo">
+				<a>programmerprojects.ru</a>
+				<a href="firstsite.html" title="Вернуться к началу" class="topbutton">^Наверх</a>
+			</div>
+			<div class="slt">
+			<section>
+	<a>Выбрать</a>
+    <select onchange="window.location.href=this.options[this.selectedIndex].value">
+    <option VALUE="http://ru.stackoverflow.com/">Програмирование</option>
+    <option VALUE="index.html">Новости</option>
+    <option VALUE="http://ru.stackoverflow.com/">Популярное</option>
+</select>
+    <a id="c1" href="index.html">Закрыть статью</a>
+</section>
+</div>
+<div class="net">
+	<a href="https://www.instagram.com/ustichmatvei/?hl=ru"><img src="instagram.png" alt="Сдесь должна быть картинка"></a>
+	<a href="https://www.facebook.com/profile.php?id=100029653325688"><img src="facebook.png" alt="Сдесь должна быть картинка"></a>
+	<a href="nickxone@mail.ru"><img src="mail1.png" alt="Сдесь должна быть картинка"></a>
+	<a href="https://vk.com/matey_ustich"><img src="vk1.png" alt="Сдесь должна быть картинка"></a>
+	</div>
+	
+	<br><br><br><br><br><br>
+<div class="hts">
+	<h1>Как создать свой первый сайт?</h1>
+	<h3>1. Лучшие сервисы для самостоятельного создания сайта</h3>
+	<p>
+		Что лучше выбрать для самостоятельного создания сайта – конструктор или CMS? Ответ однозначный: только конструктор сайтов. Почему? Всё просто: раз вам нужен совет такого рода, значит, опыта разработки либо нет, либо его меньше, чем необходимо для решения вашей задачи. Танцы с бубном вокруг установки CMS, поиска хостинга отнимут много времени и средств – при этом желаемого результата не получите. Скорее всего, вам нужно разово создать один сайт для себя – небольшую визитку под бизнес, площадку для предоставление услуг, портфолио или, возможно, блог, небольшой магазин на несколько десятков или сотен товаров. Конструкторы помогают решать такие задачи наиболее рациональным способом. Что по деньгам, что по вложениям времени, труда и получения обратной выгоды.
+
+		Ниже показаны ТОП-3 лучших конструкторов сайтов А-класса. Все они хорошо сочетаются с неопытностью новичков, помогают достигать результата без стартовых знаний HTML и программирования. Каждый из них функционально продвинут на фоне аналогов. Можно смело использовать, осталось лишь определиться, какой из них конкретно выбрать.
+	</p>
+	<h3>2. Создание сайта на uKit </h3>
+	<p id="u"><a href="https://ukit.com/ru"><img src="uKit.jpg" width="80%" alt="Здесь должна быть картинка"></a></p>
+	<p><a href="https://ukit.com/ru">uKit</a> – лучший конструктор для самостоятельного создания сайтов. В первую очередь, сервис рассчитан на владельцев бизнеса, частных предпринимателей и специалистов разных сфер деятельности. Позволяет собирать яркие сайты-визитки, портфолио работ, продающие лендинги (одностраничники, посадочные страницы), а также блоги и интернет-магазины. Интерфейс админки современный, интуитивно понятный. Никакого кодинга и сложных настроек. Шаблоны разнообразные и быстро настраиваются, имеют адаптивную верстку (автоматически подстраиваются под экран любого устройства). Для рекламы (продажи) своих услуг (товаров) движок подходит идеально, обладая при этом низкой в своей нише стоимостью и высокой эффективностью.
+
+Функционал uKit построен на основе визуального Drag & Drop редактора и содержит 400+ тематических шаблонов. Они изначально укомплектованы демо-данными, подправив которые можно получить готовый сайт за 20 минут. Наполнение страниц осуществляет перетаскиванием курсором мышки на любую часть шаблона виджетов и контентных блоков различного назначения: текст, галерея, слайдер, онлайн калькулятор, живой чат, кнопка обратного звонка, соцбар и др. – остается только вписать свою информацию.</p>
+<h3>3. Создание сайта на Wix</h3>
+<p id="u"><a href="https://ru.wix.com/"><img src="wix.jpeg" width="80%"></a></p>
+<p><a href="https://ru.wix.com/">Wix</a> – конструктор сайтов, признанный многими критиками и являющий собою пример того, каким должен быть движок с визуальным редактором для новичков. Он хорош и является одним из наиболее популярных в мире. Но всё же не безупречен: недешёвый на фоне аналогов. Но это всё некритично, даже цена. Если Wix понравится, с ним будет комфортно работать.
+
+Ярко выраженным преимуществом Wix над конкурентами являются его встроенные шаблоны. Они очень разноплановые, красивые, креативные и все бесплатные. Кроме того, их много. Все лежат в тематических категориях и имеют режим предпросмотра. К сожалению, сменить шаблон на другой в процессе работы не получится: дело в большой разнице между шаблонами, которая не позволит одеть уже имеющийся контент в другой без нарушения структуры. Явный недостаток, издержки креативности подхода, так сказать. Поэтому выбирать нужно наверняка с первого раза, поэтому «семь раз посмотри один раз установи» (c).</p>
+<h3>3. Создание сайта на uCoz</h3>
+<p id="u"><a href="https://www.ucoz.ru/"><img src="ucoz.jpeg" width="80%"></a></p>
+<p><a href="https://www.ucoz.ru/">uCoz</a> – самый мощный, универсальный конструктор сайтов, ориентированный на создание всех типов сайтов любой степени сложности. Он бесплатный – реально можно получить хостинг, поддомен и сам движок в распоряжение на неограниченный срок бесплатно. Не оплачивая ни одного тарифа, можно подключить собственный домен (вида moysait.com) и использовать почти весь доступный функционал (исключение составит модуль магазина, Pro SEO-модуль, возможность подключения PHP-скриптов и https). Главная особенность бесплатной версии: 400 Мб места на хостинге и будет отображаться реклама.
+
+Веб-сервис нельзя назвать простым, но в логичности панели управления ему не откажешь. Система позволяет оперировать огромным набором инструментов, которых с головой хватит на создание качественного посещаемого блога, форума, магазина или портала. О сайтах-визитках или лендингах и говорить нечего.</p>
+	    
+
+
+  </div>
+
+
+	<style>
+
+</style>
+</div>
+
+
+
+
+		</header>
+</body>
+</html>
